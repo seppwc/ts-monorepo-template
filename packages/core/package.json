@@ -1,0 +1,39 @@
+{
+  "name": "@tsmonorepo/core",
+  "version": "0.0.0",
+  "description": "<TODO>",
+  "author": "Sepp Wikramaratna-Clarke <ph3lbas87@gmail.com>",
+  "license": "MIT",
+
+  "homepage": "<TODO>",
+  "repository": {
+    "type": "git",
+    "url": "<TODO>",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "<TODO>"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "devDependencies": {
+    "magic-string": "^0.26.3",
+    "unconfig": "^0.3.6"
+  }
+}

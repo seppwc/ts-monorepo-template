@@ -1,0 +1,54 @@
+{
+  "name": "@tsmonorepo/cli",
+  "version": "0.0.0",
+  "description": "<TODO>",
+  "author": {
+    "name": "Sepp Wikramratna-Clarke",
+    "email": "phl3bas87@gmail.com"
+  },
+  "license": "MIT",
+
+  "homepage": "<TODO>",
+  "repository": {
+    "type": "git",
+    "url": "<TODO>",
+    "directory": "packages/cli"
+  },
+
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "placeholder-cli": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@ampproject/remapping": "^2.2.0",
+    "@rollup/pluginutils": "^4.2.1",
+    "cac": "^6.7.14",
+    "chokidar": "^3.5.3",
+    "colorette": "^2.0.19",
+    "consola": "^2.15.3",
+    "fast-glob": "^3.2.12",
+    "magic-string": "^0.26.3",
+    "pathe": "^0.3.7",
+    "perfect-debounce": "^0.1.3"
+  }
+}
