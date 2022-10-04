@@ -13,7 +13,8 @@
     "jsx": "preserve",
     "types": [
       "node",
-      "vite/client"
+      "vite/client",
+      "vitest"
     ],
     "paths": {
       "~core" : ["./packages/core/src/index.ts"],
@@ -24,6 +25,5 @@
   "exclude": [
     "**/dist/**",
     "**/node_modules/**",
-    "**/test/dts/**"
   ]
 }
